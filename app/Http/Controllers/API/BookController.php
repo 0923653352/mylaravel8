@@ -31,7 +31,7 @@ class BookController extends Controller
             $filename = $request->file('image')->store('uploads', 'public');
             $requestData['image'] = asset('storage/'.$filename);
         }
-  
+//   dsfdsfds
     
         $book = Book::create($requestData);
         return ["success" => true, "data" => $book];
